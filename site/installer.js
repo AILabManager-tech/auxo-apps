@@ -62,7 +62,7 @@ function etapes(os, nomAppli) {
       T("Autres distributions : prenez l'AppImage (tableau plus bas), rendez-la exécutable et lancez-la.", "Other distributions: take the AppImage (table below), make it executable and run it."),
     ],
     ios: [
-      T("Ouvrez cette page dans <b>Safari</b>.", "Open this page in <b>Safari</b>."),
+      T(`Dans <b>Safari</b>, touchez le bouton vert ci-dessus : ${nomAppli} s'ouvre.`, `In <b>Safari</b>, tap the green button above: ${nomAppli} opens.`),
       T("Touchez le bouton <b>Partager</b> (carré avec une flèche).", "Tap the <b>Share</b> button (square with an arrow)."),
       T("Choisissez <b>Sur l'écran d'accueil</b>, puis <b>Ajouter</b>. L'appli s'ouvre ensuite comme les autres, même hors ligne.", "Choose <b>Add to Home Screen</b>, then <b>Add</b>. It then opens like any app, even offline."),
     ],
@@ -154,7 +154,10 @@ async function demarrer() {
   });
 
   const id = document.body.dataset.appli;
-  if (!id) return;
+  if (!id) {
+    if (["android", "ios"].includes(appareil())) document.querySelector(".qr")?.setAttribute("hidden", "");
+    return;
+  }
   const racine = document.body.dataset.racine || "../";
   try {
     const v = await (await fetch(`${racine}versions.json`, { cache: "no-cache" })).json();
