@@ -1,0 +1,138 @@
+/* Applis Auxo Systems — page de téléchargement.
+   Couleurs et polices : charte Auxo (01_auxo-systems/branding/tokens.css). Polices hébergées ici :
+   aucune requête vers un tiers, donc aucun témoin ni transfert d'adresse IP. */
+
+@font-face {
+  font-family: "Inter";
+  src: url("polices/inter-latin-wght-normal.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("polices/fraunces-latin-wght-normal.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  --ivoire: #fbfaf5;
+  --creme: #f3f1e9;
+  --bordure: #dcd8cc;
+  --ink: #0f1c1a;
+  --ink-releve: #172724;
+  --ink-texte: #f4f1e8;
+  --ink-attenue: #9db0a8;
+  --ink-bordure: #2c403b;
+  --petrole: #2c5a66;
+  --menthe: #a9ddcf;
+  --menthe-sombre: #8ec9ba;
+  --ocre: #8a6d1f;
+  --texte: #1f2d2b;
+  --texte-2: #4a5d52;
+  --titres: "Fraunces", Georgia, serif;
+  --corps: "Inter", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--ivoire);
+  color: var(--texte);
+  font: 400 1rem/1.65 var(--corps);
+}
+a { color: var(--petrole); }
+img { max-width: 100%; display: block; }
+
+.contenu { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+
+/* En-tête */
+.entete { border-bottom: 1px solid var(--bordure); background: var(--ivoire); }
+.entete .contenu { display: flex; align-items: center; justify-content: space-between; min-height: 64px; gap: 12px; }
+.marque { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--texte); font-family: var(--titres); font-size: 1.25rem; }
+.marque img { height: 22px; width: auto; }
+.langue {
+  border: 1px solid var(--bordure); background: transparent; color: var(--texte);
+  border-radius: 999px; padding: 6px 14px; font: 600 .875rem var(--corps); cursor: pointer;
+}
+
+/* Bande sombre du haut */
+.hero { background: var(--ink); color: var(--ink-texte); padding: 48px 0 56px; }
+.hero .contenu { display: grid; grid-template-columns: 1fr; gap: 32px; align-items: center; }
+@media (min-width: 760px) { .hero .contenu { grid-template-columns: 1fr 260px; } }
+.hero h1 { font: 350 clamp(2rem, 6vw, 3rem)/1.1 var(--titres); margin: 0 0 12px; }
+.hero p.accroche { color: var(--ink-attenue); font-size: 1.125rem; margin: 0 0 28px; max-width: 34em; }
+.icone-app { width: 96px; height: 96px; border-radius: 22px; margin-bottom: 20px; box-shadow: 0 8px 24px rgb(0 0 0 / .35); }
+
+/* Bouton principal : une action = un bouton */
+.installer {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  background: var(--menthe); color: var(--ink); text-decoration: none;
+  font: 700 1.125rem var(--corps); padding: 16px 28px; border-radius: 12px; border: 0;
+  min-height: 56px; cursor: pointer; width: 100%; max-width: 420px;
+}
+.installer:hover { background: var(--menthe-sombre); }
+.installer svg { width: 22px; height: 22px; flex: none; }
+.sous-bouton { color: var(--ink-attenue); font-size: .9rem; margin: 10px 0 0; }
+.boutons-magasins { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+.boutons-magasins a {
+  color: var(--ink-texte); border: 1px solid var(--ink-bordure); border-radius: 10px;
+  padding: 10px 16px; text-decoration: none; font-weight: 600; font-size: .95rem;
+}
+
+/* Étapes affichées après le clic */
+.etapes {
+  display: none; margin-top: 20px; background: var(--ink-releve); border: 1px solid var(--ink-bordure);
+  border-radius: 12px; padding: 16px 20px; max-width: 520px;
+}
+.etapes.visible { display: block; }
+.etapes h2 { font: 600 1rem var(--corps); margin: 0 0 8px; color: var(--menthe); }
+.etapes ol { margin: 0; padding-left: 1.3em; }
+.etapes li { margin: 4px 0; }
+
+/* Code QR */
+.qr { background: var(--ivoire); color: var(--texte); border-radius: 16px; padding: 16px; text-align: center; }
+.qr img { width: 100%; max-width: 228px; margin: 0 auto 8px; image-rendering: pixelated; }
+.qr p { margin: 0; font-size: .9rem; color: var(--texte-2); }
+
+/* Sections claires */
+section.bloc { padding: 48px 0; }
+section.bloc:nth-of-type(even) { background: var(--creme); }
+section.bloc h2 { font: 350 1.75rem/1.2 var(--titres); margin: 0 0 20px; }
+
+.cartes { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.carte {
+  background: linear-gradient(180deg, #f8f6ef 0%, #efece2 100%);
+  border: 1px solid var(--bordure); border-left: 4px solid var(--petrole); border-radius: .5rem;
+  padding: 16px 18px;
+  box-shadow: inset 0 1px 0 #fff, 0 1px 1px rgb(15 28 26 / .08), 0 3px 6px rgb(15 28 26 / .10);
+}
+.carte h3 { margin: 0 0 4px; font: 600 1.05rem var(--corps); }
+.carte p { margin: 0; color: var(--texte-2); font-size: .95rem; }
+.carte a.lien-carte { text-decoration: none; color: inherit; display: block; }
+
+/* Tableau des téléchargements */
+table.fichiers { width: 100%; border-collapse: collapse; font-size: .95rem; }
+table.fichiers th, table.fichiers td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--bordure); vertical-align: top; }
+table.fichiers th { font-weight: 600; color: var(--texte-2); }
+table.fichiers td:last-child { white-space: nowrap; }
+.table-defile { overflow-x: auto; }
+.note { font-size: .9rem; color: var(--texte-2); }
+
+/* Accueil : liste des applis */
+.appli-ligne { display: flex; gap: 16px; align-items: center; }
+.appli-ligne img { width: 64px; height: 64px; border-radius: 16px; flex: none; }
+
+/* Pied */
+.pied { background: var(--ink); color: var(--ink-attenue); padding: 28px 0; font-size: .9rem; }
+.pied a { color: var(--ink-texte); }
+.pied .contenu { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+
+/* Page texte (politique de confidentialité) */
+.texte { max-width: 720px; padding: 40px 16px 64px; margin: 0 auto; }
+.texte h1 { font: 350 2.25rem/1.15 var(--titres); margin: 0 0 8px; }
+.texte h2 { font: 400 1.4rem var(--titres); margin: 36px 0 8px; }
+.texte h3 { font: 600 1.05rem var(--corps); margin: 20px 0 4px; }
+
+[hidden] { display: none !important; }
