@@ -1,0 +1,17 @@
+{
+  "reveil": {
+    "nom": "Réveil",
+    "version": "1.0.0",
+    "tag": "reveil-v1.0.0",
+    "fichiers": {
+      "android": "Reveil-1.0.0-android-arm64.apk",
+      "android_32": "Reveil-1.0.0-android-armv7.apk"
+    },
+    "magasins": {
+      "play": null,
+      "appstore": null,
+      "microsoft": null
+    },
+    "web": null
+  }
+}
