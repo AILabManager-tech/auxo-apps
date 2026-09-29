@@ -121,6 +121,8 @@ function rendreAppli(id, appli) {
   const zone = document.getElementById("installer");
   const choix = choixPrincipal(id, appli, os);
   const sous = document.getElementById("sous-bouton");
+  // Déjà sur un cellulaire : le code QR ne sert à rien.
+  if (os === "android" || os === "ios") document.querySelector(".qr")?.setAttribute("hidden", "");
 
   if (choix) {
     zone.innerHTML = `<a class="installer" href="${choix.href}" ${choix.magasin || choix.href === appli.web ? "" : "download"}>${ICONE_DL}<span>${choix.texte}</span></a>`;

@@ -13,5 +13,25 @@
       "microsoft": null
     },
     "web": null
+  },
+  "neuroforge": {
+    "nom": "NEUROFORGE",
+    "version": "1.1.0",
+    "tag": "neuroforge-v1.1.0",
+    "fichiers": {
+      "linux_rpm": "NEUROFORGE-1.1.0-1.x86_64.rpm",
+      "android": "NEUROFORGE-1.1.0-android.apk",
+      "linux_appimage": "NEUROFORGE_1.1.0_amd64.AppImage",
+      "linux_deb": "NEUROFORGE_1.1.0_amd64.deb",
+      "mac": "NEUROFORGE_1.1.0_universal.dmg",
+      "windows": "NEUROFORGE_1.1.0_x64-setup.exe",
+      "windows_msi": "NEUROFORGE_1.1.0_x64_en-US.msi"
+    },
+    "magasins": {
+      "play": null,
+      "appstore": null,
+      "microsoft": null
+    },
+    "web": "app/"
   }
 }

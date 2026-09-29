@@ -1,0 +1,52 @@
+{
+  "reveil": {
+    "nom": "Réveil",
+    "fichier_play": "Reveil-1.0.0-android.aab",
+    "champs": [
+      ["Nom de l'appli (30 car. max)", "Réveil – Alarme à défi", "Challenge Alarm – Réveil"],
+      ["Description courte (80 car. max)", "L'alarme qui s'arrête seulement quand vous êtes réveillé : réussissez un défi.", "The alarm that only stops once you're awake: solve a quick challenge."],
+      ["Description complète", "Fini le bouton Arrêter pressé en dormant. Avec Réveil, pour couper l'alarme, il faut réussir un petit défi. Le temps de le faire, vous êtes réveillé.\n\nCHOISISSEZ VOTRE DÉFI, ALARME PAR ALARME\n• Calcul mental : quelques calculs rapides.\n• Scanner un code : enregistrez un code-barres ou un code QR placé loin du lit (salle de bain, cuisine). Pour arrêter l'alarme, il faut se lever et aller le scanner.\n• Bascule : triez selon une règle qui change sans prévenir.\n• Rémanence : touchez quand une lettre revient.\n• Culture générale : sept catégories (Québec, histoire, géographie, sciences, sports, musique, culture populaire) ou toutes à la fois.\n• Ou aucun défi, pour une alarme classique.\n\nTrois niveaux pour chaque défi : Facile, Moyen, Difficile.\n\nUNE ALARME FIABLE\n• Sonne à l'heure exacte, même téléphone verrouillé.\n• Reprend ses alarmes après un redémarrage du téléphone.\n• Répétition : une fois, tous les jours, en semaine, la fin de semaine ou les jours de votre choix.\n• Reports limités à 3, pour ne pas se rendormir indéfiniment.\n• Six sonneries intégrées du domaine public, ou la sonnerie de votre téléphone.\n\nRESPECT DE LA VIE PRIVÉE\nGratuit, sans publicité, sans compte. Réveil n'a pas accès à Internet : rien ne quitte votre téléphone.", "No more hitting Stop in your sleep. With Réveil, you turn the alarm off by solving a short challenge, and by then you're awake.\n\nPICK A CHALLENGE FOR EACH ALARM\n• Mental math: a few quick calculations.\n• Scan a code: register a barcode or QR code placed far from your bed (bathroom, kitchen). To stop the alarm you have to get up and scan it.\n• Bascule: sort by a rule that changes without warning.\n• Rémanence: tap when a letter comes back.\n• Trivia: seven categories or all of them.\n• Or no challenge, for a classic alarm.\n\nThree levels for each challenge: Easy, Medium, Hard.\n\nA RELIABLE ALARM\n• Rings on time, even when the phone is locked.\n• Restores alarms after the phone restarts.\n• Repeat once, daily, weekdays, weekends or on the days you choose.\n• Snooze limited to 3 times.\n• Six built-in public-domain ringtones, or your phone's ringtone.\n\nPRIVACY\nFree, no ads, no account. Réveil has no internet access: nothing leaves your phone.\n\nThe app is in French."],
+      ["Catégorie", "Outils", "Tools"],
+      ["Étiquettes (jusqu'à 5)", "Réveil, Alarme, Productivité", "Alarm clock, Alarm, Productivity"],
+      ["Courriel de contact", "info@auxosystems.ca", ""],
+      ["Site Web", "https://ailabmanager-tech.github.io/auxo-apps/reveil/", ""],
+      ["Politique de confidentialité (URL)", "https://ailabmanager-tech.github.io/auxo-apps/confidentialite/#reveil", ""]
+    ],
+    "reponses": [
+      ["Sécurité des données › L'appli collecte ou partage-t-elle des données ?", "Non. (Aucune donnée ne quitte le téléphone : Internet est retiré de l'appli.)"],
+      ["Classification du contenu", "Catégorie « Utilitaires, productivité… ». Répondre Non à toutes les questions (violence, sexualité, langage, drogues, jeux d'argent, interactions entre utilisateurs, partage de position, achats)."],
+      ["Public cible", "13 ans et plus (cocher 13-15, 16-17, 18+). Ne pas cocher les moins de 13 ans : ça imposerait les règles « Familles »."],
+      ["Annonces", "Non, l'appli ne contient pas d'annonces."],
+      ["Accès à l'appli", "Toutes les fonctionnalités sont disponibles sans restriction."],
+      ["Déclaration « Alarmes exactes » (USE_EXACT_ALARM)", "Fonction principale : réveil / alarme. Justification : « L'appli est un réveil : l'alarme doit sonner à la minute choisie par l'utilisateur. »"],
+      ["Déclaration « Intention en plein écran » (USE_FULL_SCREEN_INTENT)", "Cas d'usage : Alarmes. Justification : « L'écran de réveil s'affiche par-dessus le verrouillage quand l'alarme sonne. »"],
+      ["Appareil photo", "Utilisé seulement pour le défi « Scanner un code », analysé sur le téléphone. Pas de déclaration spéciale."],
+      ["Pays", "Canada (ou tous les pays : l'appli est en français seulement)."],
+      ["Prix", "Gratuit (définitif : une appli gratuite ne peut plus devenir payante)."]
+    ]
+  },
+  "neuroforge": {
+    "nom": "NEUROFORGE",
+    "fichier_play": "NEUROFORGE-1.1.0-android.aab",
+    "champs": [
+      ["Nom de l'appli (30 car. max)", "NEUROFORGE – Forme mentale", "NEUROFORGE – Brain Training"],
+      ["Description courte (80 car. max)", "9 exercices courts pour entraîner calcul, mémoire, attention et orientation.", "9 short exercises to train math, memory, attention and orientation."],
+      ["Description complète", "NEUROFORGE est un centre d'entraînement mental : neuf exercices courts, une séance du jour qui se compose selon vos résultats, et un profil qui montre vos progrès.\n\nNEUF MODULES\n• Calcul Flash : calcul mental avec les astuces à apprendre, 8 paliers.\n• Rémanence : mémoire de travail (n-back adaptatif), visuel ou audio.\n• Palais : palais de mémoire sur vos vrais lieux.\n• Boussole : orientation dans des villes générées, sans carte ni flèche.\n• Bascule : les règles changent sans prévenir.\n• Radar : champ visuel utile et poursuite de plusieurs cibles.\n• Oracle : estimer, prévoir, puis mesurer la justesse de ses certitudes.\n• Babel : vocabulaire et grammaire en anglais et en espagnol, avec la voix.\n• Foulée : marcher en faisant une tâche mentale.\n\nCOMMENT ÇA MARCHE\n• Un bilan initial d'environ 20 minutes fixe votre point de départ.\n• Chaque jour, une séance de 15 à 20 minutes choisit les exercices utiles.\n• Formation, pratique guidée, exercices, puis épreuve de fin de palier.\n• Mode Fusion : deux tâches en même temps.\n• Répétition espacée pour retenir ce qui a été appris.\n\nRESPECT DE LA VIE PRIVÉE\nGratuit, sans publicité, sans compte. Vos progrès restent sur votre appareil ; vous pouvez les exporter ou les effacer dans les réglages.", "NEUROFORGE is a mental training hub: nine short exercises, a daily session built from your results, and a profile that tracks your progress.\n\nNINE MODULES\n• Calcul Flash: mental math with shortcuts, 8 levels.\n• Rémanence: working memory (adaptive n-back), visual or audio.\n• Palais: memory palace on places you know.\n• Boussole: orientation in generated cities, no map, no arrow.\n• Bascule: rules change without warning.\n• Radar: useful field of view and multiple object tracking.\n• Oracle: estimate, forecast, then measure your calibration.\n• Babel: English and Spanish vocabulary and grammar, with voice.\n• Foulée: walk while doing a mental task.\n\nHOW IT WORKS\n• A ~20-minute initial assessment sets your starting point.\n• Each day, a 15-20 minute session picks the useful exercises.\n• Lesson, guided practice, drills, then a level test.\n• Fusion mode: two tasks at once.\n• Spaced repetition to keep what you learned.\n\nPRIVACY\nFree, no ads, no account. Your progress stays on your device; export or erase it in the settings.\n\nThe app is in French."],
+      ["Catégorie", "Éducation", "Education"],
+      ["Étiquettes (jusqu'à 5)", "Entraînement cérébral, Éducation, Mémoire", "Brain training, Education, Memory"],
+      ["Courriel de contact", "info@auxosystems.ca", ""],
+      ["Site Web", "https://ailabmanager-tech.github.io/auxo-apps/neuroforge/", ""],
+      ["Politique de confidentialité (URL)", "https://ailabmanager-tech.github.io/auxo-apps/confidentialite/#neuroforge", ""]
+    ],
+    "reponses": [
+      ["Sécurité des données › L'appli collecte ou partage-t-elle des données ?", "Non. Les progrès restent sur l'appareil. La reconnaissance vocale passe par le service vocal d'Android, pas par l'appli."],
+      ["Classification du contenu", "Catégorie « Jeu » ou « Référence, éducation » : choisir Éducation. Répondre Non à toutes les questions."],
+      ["Public cible", "13 ans et plus (cocher 13-15, 16-17, 18+)."],
+      ["Annonces", "Non."],
+      ["Accès à l'appli", "Toutes les fonctionnalités sont disponibles sans restriction."],
+      ["Micro (RECORD_AUDIO)", "Utilisé seulement si l'utilisateur touche Micro dans Babel. Pas de déclaration spéciale."],
+      ["Pays", "Canada (ou tous les pays : l'appli est en français)."],
+      ["Prix", "Gratuit."]
+    ]
+  }
+}

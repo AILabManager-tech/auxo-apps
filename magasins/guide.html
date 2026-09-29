@@ -1,0 +1,263 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>Publication — magasins d'applis</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body { margin: 0; font: 16px/1.6 system-ui, sans-serif; background: #fbfaf5; color: #1f2d2b; }
+header { background: #0f1c1a; color: #f4f1e8; padding: 24px 16px; }
+header h1 { margin: 0; font-weight: 500; } header p { margin: 4px 0 0; color: #9db0a8; }
+nav { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+nav a { background: #a9ddcf; color: #0f1c1a; padding: 10px 18px; border-radius: 10px; text-decoration: none; font-weight: 700; }
+main { max-width: 1200px; margin: 0 auto; padding: 16px; }
+h2 { display: flex; align-items: center; gap: 12px; font-weight: 500; font-size: 1.8rem; margin: 48px 0 8px; border-top: 3px solid #2c5a66; padding-top: 24px; }
+h2 .ic { width: 48px; height: 48px; border-radius: 12px; }
+table { border-collapse: collapse; width: 100%; background: #fff; }
+th, td { border: 1px solid #dcd8cc; padding: 10px; vertical-align: top; text-align: left; }
+th { width: 22%; background: #f3f1e9; font-weight: 600; }
+pre { white-space: pre-wrap; font: inherit; margin: 0 0 8px; max-height: 260px; overflow: auto; }
+button { background: #2c5a66; color: #fff; border: 0; border-radius: 8px; padding: 8px 16px; font-weight: 700; cursor: pointer; }
+button.ok { background: #426b52; }
+.nb { font-size: .8rem; color: #4a5d52; margin-top: 4px; }
+.alerte { background: #fff4d6; border-left: 5px solid #8a6d1f; padding: 10px 14px; margin: 8px 0; }
+.etapes li { margin: 10px 0; }
+.caps { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 8px; }
+.caps img { height: 280px; border-radius: 8px; border: 1px solid #dcd8cc; }
+.caps img.ban { height: 137px; }
+.fichier { background: #e8f4ef; padding: 10px 14px; border-radius: 8px; }
+code { background: #efede3; padding: 1px 5px; border-radius: 4px; }
+</style></head><body>
+<header><h1>Publication sur les magasins d'applis</h1>
+<p>Tout ce qu'il faut pour Google Play, dans l'ordre. Un bouton Copier par champ.</p>
+<nav><a href="#ordre">1. Étapes</a><a href="#reveil">2. Réveil</a><a href="#neuroforge">3. NEUROFORGE</a><a href="#autres">4. Autres magasins</a></nav></header>
+<main>
+<h2 id="ordre">Étapes, dans l'ordre</h2>
+<ol class="etapes">
+<li><b>Créer le compte Google Play Console</b> : <a href="https://play.google.com/console/signup" target="_blank">play.google.com/console/signup</a>, frais uniques de 25 $ US.
+  <div class="alerte">Deux choix de compte. <b>Personnel</b> : prêt tout de suite, mais Google exige un <b>test fermé de 14 jours avec au moins 12 testeurs</b>
+  avant la mise en ligne publique. <b>Organisation</b> : pas de test obligatoire, mais il faut un numéro D-U-N-S (gratuit, quelques jours à quelques
+  semaines) et une entreprise immatriculée. Tant que le NEQ d'Auxo Systems n'est pas confirmé, prenez <b>Personnel</b>.</div></li>
+<li>Vérification d'identité (pièce + cellulaire). Comptez 1 à 3 jours.</li>
+<li>Pour chaque appli ci-dessous : <b>Créer une appli</b> → langue par défaut Français (Canada) → Appli → Gratuite.</li>
+<li>Remplir <b>Fiche principale</b> avec les boutons Copier, téléverser l'icône, la bannière et les captures.</li>
+<li>Remplir <b>Contenu de l'appli</b> avec les réponses de la section « Questionnaires ».</li>
+<li><b>Test fermé</b> → Créer une version → téléverser le fichier <code>.aab</code> indiqué → ajouter la liste de courriels des 12 testeurs →
+  leur envoyer le lien d'inscription. Signature : laisser <b>Google gérer la clé</b> (choix par défaut).</li>
+<li>Après 14 jours : <b>Production</b> → Promouvoir la version. Examen de Google : quelques heures à 7 jours.</li>
+<li>Quand la page Play existe, <b>envoyez-moi son lien</b> : le bouton Installer de votre page y mènera, et l'installation deviendra automatique pour tout Android.</li>
+</ol>
+
+<section id="reveil">
+<h2><img class="ic" src="../site/img/reveil-512.png"> Réveil</h2>
+<p class="fichier">Fichier à téléverser dans Play : <code>/home/gear-code/02_projects/reveil/livrables/1.0.0/Reveil-1.0.0-android.aab</code>
+  <button onclick="copier(this)" data-t="/home/gear-code/02_projects/reveil/livrables/1.0.0">Copier le dossier</button></p>
+<h3>Fiche principale</h3>
+<table><tr><th></th><th>Français (principal)</th><th>English (ajouter la traduction en-CA)</th></tr><tr><th>Nom de l&#x27;appli (30 car. max)</th><td><pre>Réveil – Alarme à défi</pre><button onclick="copier(this)" data-t="Réveil – Alarme à défi">Copier</button><div class='nb'>22 caractères</div></td><td><pre>Challenge Alarm – Réveil</pre><button onclick="copier(this)" data-t="Challenge Alarm – Réveil">Copier</button></td></tr><tr><th>Description courte (80 car. max)</th><td><pre>L&#x27;alarme qui s&#x27;arrête seulement quand vous êtes réveillé : réussissez un défi.</pre><button onclick="copier(this)" data-t="L&#x27;alarme qui s&#x27;arrête seulement quand vous êtes réveillé : réussissez un défi.">Copier</button><div class='nb'>78 caractères</div></td><td><pre>The alarm that only stops once you&#x27;re awake: solve a quick challenge.</pre><button onclick="copier(this)" data-t="The alarm that only stops once you&#x27;re awake: solve a quick challenge.">Copier</button></td></tr><tr><th>Description complète</th><td><pre>Fini le bouton Arrêter pressé en dormant. Avec Réveil, pour couper l&#x27;alarme, il faut réussir un petit défi. Le temps de le faire, vous êtes réveillé.
+
+CHOISISSEZ VOTRE DÉFI, ALARME PAR ALARME
+• Calcul mental : quelques calculs rapides.
+• Scanner un code : enregistrez un code-barres ou un code QR placé loin du lit (salle de bain, cuisine). Pour arrêter l&#x27;alarme, il faut se lever et aller le scanner.
+• Bascule : triez selon une règle qui change sans prévenir.
+• Rémanence : touchez quand une lettre revient.
+• Culture générale : sept catégories (Québec, histoire, géographie, sciences, sports, musique, culture populaire) ou toutes à la fois.
+• Ou aucun défi, pour une alarme classique.
+
+Trois niveaux pour chaque défi : Facile, Moyen, Difficile.
+
+UNE ALARME FIABLE
+• Sonne à l&#x27;heure exacte, même téléphone verrouillé.
+• Reprend ses alarmes après un redémarrage du téléphone.
+• Répétition : une fois, tous les jours, en semaine, la fin de semaine ou les jours de votre choix.
+• Reports limités à 3, pour ne pas se rendormir indéfiniment.
+• Six sonneries intégrées du domaine public, ou la sonnerie de votre téléphone.
+
+RESPECT DE LA VIE PRIVÉE
+Gratuit, sans publicité, sans compte. Réveil n&#x27;a pas accès à Internet : rien ne quitte votre téléphone.</pre><button onclick="copier(this)" data-t="Fini le bouton Arrêter pressé en dormant. Avec Réveil, pour couper l&#x27;alarme, il faut réussir un petit défi. Le temps de le faire, vous êtes réveillé.
+
+CHOISISSEZ VOTRE DÉFI, ALARME PAR ALARME
+• Calcul mental : quelques calculs rapides.
+• Scanner un code : enregistrez un code-barres ou un code QR placé loin du lit (salle de bain, cuisine). Pour arrêter l&#x27;alarme, il faut se lever et aller le scanner.
+• Bascule : triez selon une règle qui change sans prévenir.
+• Rémanence : touchez quand une lettre revient.
+• Culture générale : sept catégories (Québec, histoire, géographie, sciences, sports, musique, culture populaire) ou toutes à la fois.
+• Ou aucun défi, pour une alarme classique.
+
+Trois niveaux pour chaque défi : Facile, Moyen, Difficile.
+
+UNE ALARME FIABLE
+• Sonne à l&#x27;heure exacte, même téléphone verrouillé.
+• Reprend ses alarmes après un redémarrage du téléphone.
+• Répétition : une fois, tous les jours, en semaine, la fin de semaine ou les jours de votre choix.
+• Reports limités à 3, pour ne pas se rendormir indéfiniment.
+• Six sonneries intégrées du domaine public, ou la sonnerie de votre téléphone.
+
+RESPECT DE LA VIE PRIVÉE
+Gratuit, sans publicité, sans compte. Réveil n&#x27;a pas accès à Internet : rien ne quitte votre téléphone.">Copier</button><div class='nb'>1249 caractères</div></td><td><pre>No more hitting Stop in your sleep. With Réveil, you turn the alarm off by solving a short challenge, and by then you&#x27;re awake.
+
+PICK A CHALLENGE FOR EACH ALARM
+• Mental math: a few quick calculations.
+• Scan a code: register a barcode or QR code placed far from your bed (bathroom, kitchen). To stop the alarm you have to get up and scan it.
+• Bascule: sort by a rule that changes without warning.
+• Rémanence: tap when a letter comes back.
+• Trivia: seven categories or all of them.
+• Or no challenge, for a classic alarm.
+
+Three levels for each challenge: Easy, Medium, Hard.
+
+A RELIABLE ALARM
+• Rings on time, even when the phone is locked.
+• Restores alarms after the phone restarts.
+• Repeat once, daily, weekdays, weekends or on the days you choose.
+• Snooze limited to 3 times.
+• Six built-in public-domain ringtones, or your phone&#x27;s ringtone.
+
+PRIVACY
+Free, no ads, no account. Réveil has no internet access: nothing leaves your phone.
+
+The app is in French.</pre><button onclick="copier(this)" data-t="No more hitting Stop in your sleep. With Réveil, you turn the alarm off by solving a short challenge, and by then you&#x27;re awake.
+
+PICK A CHALLENGE FOR EACH ALARM
+• Mental math: a few quick calculations.
+• Scan a code: register a barcode or QR code placed far from your bed (bathroom, kitchen). To stop the alarm you have to get up and scan it.
+• Bascule: sort by a rule that changes without warning.
+• Rémanence: tap when a letter comes back.
+• Trivia: seven categories or all of them.
+• Or no challenge, for a classic alarm.
+
+Three levels for each challenge: Easy, Medium, Hard.
+
+A RELIABLE ALARM
+• Rings on time, even when the phone is locked.
+• Restores alarms after the phone restarts.
+• Repeat once, daily, weekdays, weekends or on the days you choose.
+• Snooze limited to 3 times.
+• Six built-in public-domain ringtones, or your phone&#x27;s ringtone.
+
+PRIVACY
+Free, no ads, no account. Réveil has no internet access: nothing leaves your phone.
+
+The app is in French.">Copier</button></td></tr><tr><th>Catégorie</th><td><pre>Outils</pre><button onclick="copier(this)" data-t="Outils">Copier</button><div class='nb'>6 caractères</div></td><td><pre>Tools</pre><button onclick="copier(this)" data-t="Tools">Copier</button></td></tr><tr><th>Étiquettes (jusqu&#x27;à 5)</th><td><pre>Réveil, Alarme, Productivité</pre><button onclick="copier(this)" data-t="Réveil, Alarme, Productivité">Copier</button><div class='nb'>28 caractères</div></td><td><pre>Alarm clock, Alarm, Productivity</pre><button onclick="copier(this)" data-t="Alarm clock, Alarm, Productivity">Copier</button></td></tr><tr><th>Courriel de contact</th><td><pre>info@auxosystems.ca</pre><button onclick="copier(this)" data-t="info@auxosystems.ca">Copier</button><div class='nb'>19 caractères</div></td><td></td></tr><tr><th>Site Web</th><td><pre>https://ailabmanager-tech.github.io/auxo-apps/reveil/</pre><button onclick="copier(this)" data-t="https://ailabmanager-tech.github.io/auxo-apps/reveil/">Copier</button><div class='nb'>53 caractères</div></td><td></td></tr><tr><th>Politique de confidentialité (URL)</th><td><pre>https://ailabmanager-tech.github.io/auxo-apps/confidentialite/#reveil</pre><button onclick="copier(this)" data-t="https://ailabmanager-tech.github.io/auxo-apps/confidentialite/#reveil">Copier</button><div class='nb'>69 caractères</div></td><td></td></tr></table>
+<h3>Images</h3>
+<p>Icône 512×512 : <code>site/img/reveil-512.png</code> · Bannière 1024×500 : <code>magasins/reveil/banniere-1024x500.png</code> · Captures de téléphone :</p>
+<div class="caps"><a href="../site/img/reveil-512.png" target="_blank"><img src="../site/img/reveil-512.png"></a>
+<a href="reveil/banniere-1024x500.png" target="_blank"><img class="ban" src="reveil/banniere-1024x500.png"></a><a href="reveil/captures/1-alarmes.png" target="_blank"><img src="reveil/captures/1-alarmes.png"></a><a href="reveil/captures/2-editeur.png" target="_blank"><img src="reveil/captures/2-editeur.png"></a><a href="reveil/captures/3-sonnerie-calcul.png" target="_blank"><img src="reveil/captures/3-sonnerie-calcul.png"></a><a href="reveil/captures/4-sonnerie-culture.png" target="_blank"><img src="reveil/captures/4-sonnerie-culture.png"></a></div>
+<h3>Questionnaires (Contenu de l'appli)</h3>
+<table><tr><th>Sécurité des données › L&#x27;appli collecte ou partage-t-elle des données ?</th><td colspan=2>Non. (Aucune donnée ne quitte le téléphone : Internet est retiré de l&#x27;appli.)</td></tr><tr><th>Classification du contenu</th><td colspan=2>Catégorie « Utilitaires, productivité… ». Répondre Non à toutes les questions (violence, sexualité, langage, drogues, jeux d&#x27;argent, interactions entre utilisateurs, partage de position, achats).</td></tr><tr><th>Public cible</th><td colspan=2>13 ans et plus (cocher 13-15, 16-17, 18+). Ne pas cocher les moins de 13 ans : ça imposerait les règles « Familles ».</td></tr><tr><th>Annonces</th><td colspan=2>Non, l&#x27;appli ne contient pas d&#x27;annonces.</td></tr><tr><th>Accès à l&#x27;appli</th><td colspan=2>Toutes les fonctionnalités sont disponibles sans restriction.</td></tr><tr><th>Déclaration « Alarmes exactes » (USE_EXACT_ALARM)</th><td colspan=2>Fonction principale : réveil / alarme. Justification : « L&#x27;appli est un réveil : l&#x27;alarme doit sonner à la minute choisie par l&#x27;utilisateur. »</td></tr><tr><th>Déclaration « Intention en plein écran » (USE_FULL_SCREEN_INTENT)</th><td colspan=2>Cas d&#x27;usage : Alarmes. Justification : « L&#x27;écran de réveil s&#x27;affiche par-dessus le verrouillage quand l&#x27;alarme sonne. »</td></tr><tr><th>Appareil photo</th><td colspan=2>Utilisé seulement pour le défi « Scanner un code », analysé sur le téléphone. Pas de déclaration spéciale.</td></tr><tr><th>Pays</th><td colspan=2>Canada (ou tous les pays : l&#x27;appli est en français seulement).</td></tr><tr><th>Prix</th><td colspan=2>Gratuit (définitif : une appli gratuite ne peut plus devenir payante).</td></tr></table>
+</section>
+
+<section id="neuroforge">
+<h2><img class="ic" src="../site/img/neuroforge-512.png"> NEUROFORGE</h2>
+<p class="fichier">Fichier à téléverser dans Play : <code>/home/gear-code/09_GAMING/neuroforge/livrables/natif/1.1.0/NEUROFORGE-1.1.0-android.aab</code>
+  <button onclick="copier(this)" data-t="/home/gear-code/09_GAMING/neuroforge/livrables/natif/1.1.0">Copier le dossier</button></p>
+<h3>Fiche principale</h3>
+<table><tr><th></th><th>Français (principal)</th><th>English (ajouter la traduction en-CA)</th></tr><tr><th>Nom de l&#x27;appli (30 car. max)</th><td><pre>NEUROFORGE – Forme mentale</pre><button onclick="copier(this)" data-t="NEUROFORGE – Forme mentale">Copier</button><div class='nb'>26 caractères</div></td><td><pre>NEUROFORGE – Brain Training</pre><button onclick="copier(this)" data-t="NEUROFORGE – Brain Training">Copier</button></td></tr><tr><th>Description courte (80 car. max)</th><td><pre>9 exercices courts pour entraîner calcul, mémoire, attention et orientation.</pre><button onclick="copier(this)" data-t="9 exercices courts pour entraîner calcul, mémoire, attention et orientation.">Copier</button><div class='nb'>76 caractères</div></td><td><pre>9 short exercises to train math, memory, attention and orientation.</pre><button onclick="copier(this)" data-t="9 short exercises to train math, memory, attention and orientation.">Copier</button></td></tr><tr><th>Description complète</th><td><pre>NEUROFORGE est un centre d&#x27;entraînement mental : neuf exercices courts, une séance du jour qui se compose selon vos résultats, et un profil qui montre vos progrès.
+
+NEUF MODULES
+• Calcul Flash : calcul mental avec les astuces à apprendre, 8 paliers.
+• Rémanence : mémoire de travail (n-back adaptatif), visuel ou audio.
+• Palais : palais de mémoire sur vos vrais lieux.
+• Boussole : orientation dans des villes générées, sans carte ni flèche.
+• Bascule : les règles changent sans prévenir.
+• Radar : champ visuel utile et poursuite de plusieurs cibles.
+• Oracle : estimer, prévoir, puis mesurer la justesse de ses certitudes.
+• Babel : vocabulaire et grammaire en anglais et en espagnol, avec la voix.
+• Foulée : marcher en faisant une tâche mentale.
+
+COMMENT ÇA MARCHE
+• Un bilan initial d&#x27;environ 20 minutes fixe votre point de départ.
+• Chaque jour, une séance de 15 à 20 minutes choisit les exercices utiles.
+• Formation, pratique guidée, exercices, puis épreuve de fin de palier.
+• Mode Fusion : deux tâches en même temps.
+• Répétition espacée pour retenir ce qui a été appris.
+
+RESPECT DE LA VIE PRIVÉE
+Gratuit, sans publicité, sans compte. Vos progrès restent sur votre appareil ; vous pouvez les exporter ou les effacer dans les réglages.</pre><button onclick="copier(this)" data-t="NEUROFORGE est un centre d&#x27;entraînement mental : neuf exercices courts, une séance du jour qui se compose selon vos résultats, et un profil qui montre vos progrès.
+
+NEUF MODULES
+• Calcul Flash : calcul mental avec les astuces à apprendre, 8 paliers.
+• Rémanence : mémoire de travail (n-back adaptatif), visuel ou audio.
+• Palais : palais de mémoire sur vos vrais lieux.
+• Boussole : orientation dans des villes générées, sans carte ni flèche.
+• Bascule : les règles changent sans prévenir.
+• Radar : champ visuel utile et poursuite de plusieurs cibles.
+• Oracle : estimer, prévoir, puis mesurer la justesse de ses certitudes.
+• Babel : vocabulaire et grammaire en anglais et en espagnol, avec la voix.
+• Foulée : marcher en faisant une tâche mentale.
+
+COMMENT ÇA MARCHE
+• Un bilan initial d&#x27;environ 20 minutes fixe votre point de départ.
+• Chaque jour, une séance de 15 à 20 minutes choisit les exercices utiles.
+• Formation, pratique guidée, exercices, puis épreuve de fin de palier.
+• Mode Fusion : deux tâches en même temps.
+• Répétition espacée pour retenir ce qui a été appris.
+
+RESPECT DE LA VIE PRIVÉE
+Gratuit, sans publicité, sans compte. Vos progrès restent sur votre appareil ; vous pouvez les exporter ou les effacer dans les réglages.">Copier</button><div class='nb'>1246 caractères</div></td><td><pre>NEUROFORGE is a mental training hub: nine short exercises, a daily session built from your results, and a profile that tracks your progress.
+
+NINE MODULES
+• Calcul Flash: mental math with shortcuts, 8 levels.
+• Rémanence: working memory (adaptive n-back), visual or audio.
+• Palais: memory palace on places you know.
+• Boussole: orientation in generated cities, no map, no arrow.
+• Bascule: rules change without warning.
+• Radar: useful field of view and multiple object tracking.
+• Oracle: estimate, forecast, then measure your calibration.
+• Babel: English and Spanish vocabulary and grammar, with voice.
+• Foulée: walk while doing a mental task.
+
+HOW IT WORKS
+• A ~20-minute initial assessment sets your starting point.
+• Each day, a 15-20 minute session picks the useful exercises.
+• Lesson, guided practice, drills, then a level test.
+• Fusion mode: two tasks at once.
+• Spaced repetition to keep what you learned.
+
+PRIVACY
+Free, no ads, no account. Your progress stays on your device; export or erase it in the settings.
+
+The app is in French.</pre><button onclick="copier(this)" data-t="NEUROFORGE is a mental training hub: nine short exercises, a daily session built from your results, and a profile that tracks your progress.
+
+NINE MODULES
+• Calcul Flash: mental math with shortcuts, 8 levels.
+• Rémanence: working memory (adaptive n-back), visual or audio.
+• Palais: memory palace on places you know.
+• Boussole: orientation in generated cities, no map, no arrow.
+• Bascule: rules change without warning.
+• Radar: useful field of view and multiple object tracking.
+• Oracle: estimate, forecast, then measure your calibration.
+• Babel: English and Spanish vocabulary and grammar, with voice.
+• Foulée: walk while doing a mental task.
+
+HOW IT WORKS
+• A ~20-minute initial assessment sets your starting point.
+• Each day, a 15-20 minute session picks the useful exercises.
+• Lesson, guided practice, drills, then a level test.
+• Fusion mode: two tasks at once.
+• Spaced repetition to keep what you learned.
+
+PRIVACY
+Free, no ads, no account. Your progress stays on your device; export or erase it in the settings.
+
+The app is in French.">Copier</button></td></tr><tr><th>Catégorie</th><td><pre>Éducation</pre><button onclick="copier(this)" data-t="Éducation">Copier</button><div class='nb'>9 caractères</div></td><td><pre>Education</pre><button onclick="copier(this)" data-t="Education">Copier</button></td></tr><tr><th>Étiquettes (jusqu&#x27;à 5)</th><td><pre>Entraînement cérébral, Éducation, Mémoire</pre><button onclick="copier(this)" data-t="Entraînement cérébral, Éducation, Mémoire">Copier</button><div class='nb'>41 caractères</div></td><td><pre>Brain training, Education, Memory</pre><button onclick="copier(this)" data-t="Brain training, Education, Memory">Copier</button></td></tr><tr><th>Courriel de contact</th><td><pre>info@auxosystems.ca</pre><button onclick="copier(this)" data-t="info@auxosystems.ca">Copier</button><div class='nb'>19 caractères</div></td><td></td></tr><tr><th>Site Web</th><td><pre>https://ailabmanager-tech.github.io/auxo-apps/neuroforge/</pre><button onclick="copier(this)" data-t="https://ailabmanager-tech.github.io/auxo-apps/neuroforge/">Copier</button><div class='nb'>57 caractères</div></td><td></td></tr><tr><th>Politique de confidentialité (URL)</th><td><pre>https://ailabmanager-tech.github.io/auxo-apps/confidentialite/#neuroforge</pre><button onclick="copier(this)" data-t="https://ailabmanager-tech.github.io/auxo-apps/confidentialite/#neuroforge">Copier</button><div class='nb'>73 caractères</div></td><td></td></tr></table>
+<h3>Images</h3>
+<p>Icône 512×512 : <code>site/img/neuroforge-512.png</code> · Bannière 1024×500 : <code>magasins/neuroforge/banniere-1024x500.png</code> · Captures de téléphone :</p>
+<div class="caps"><a href="../site/img/neuroforge-512.png" target="_blank"><img src="../site/img/neuroforge-512.png"></a>
+<a href="neuroforge/banniere-1024x500.png" target="_blank"><img class="ban" src="neuroforge/banniere-1024x500.png"></a><a href="neuroforge/captures/1-accueil.png" target="_blank"><img src="neuroforge/captures/1-accueil.png"></a><a href="neuroforge/captures/2-profil.png" target="_blank"><img src="neuroforge/captures/2-profil.png"></a><a href="neuroforge/captures/3-modules.png" target="_blank"><img src="neuroforge/captures/3-modules.png"></a><a href="neuroforge/captures/4-calcul-flash.png" target="_blank"><img src="neuroforge/captures/4-calcul-flash.png"></a><a href="neuroforge/captures/5-formation.png" target="_blank"><img src="neuroforge/captures/5-formation.png"></a></div>
+<h3>Questionnaires (Contenu de l'appli)</h3>
+<table><tr><th>Sécurité des données › L&#x27;appli collecte ou partage-t-elle des données ?</th><td colspan=2>Non. Les progrès restent sur l&#x27;appareil. La reconnaissance vocale passe par le service vocal d&#x27;Android, pas par l&#x27;appli.</td></tr><tr><th>Classification du contenu</th><td colspan=2>Catégorie « Jeu » ou « Référence, éducation » : choisir Éducation. Répondre Non à toutes les questions.</td></tr><tr><th>Public cible</th><td colspan=2>13 ans et plus (cocher 13-15, 16-17, 18+).</td></tr><tr><th>Annonces</th><td colspan=2>Non.</td></tr><tr><th>Accès à l&#x27;appli</th><td colspan=2>Toutes les fonctionnalités sont disponibles sans restriction.</td></tr><tr><th>Micro (RECORD_AUDIO)</th><td colspan=2>Utilisé seulement si l&#x27;utilisateur touche Micro dans Babel. Pas de déclaration spéciale.</td></tr><tr><th>Pays</th><td colspan=2>Canada (ou tous les pays : l&#x27;appli est en français).</td></tr><tr><th>Prix</th><td colspan=2>Gratuit.</td></tr></table>
+</section>
+<h2 id="autres">Autres magasins</h2>
+<ul>
+<li><b>Apple App Store (NEUROFORGE seulement)</b> : compte Apple Developer, 99 $ US par an. Dites-moi quand il existe :
+  la compilation iPhone est déjà prévue sur GitHub, il manque seulement les certificats du compte. D'ici là, sur iPhone,
+  la version web s'installe depuis Safari (bouton sur votre page).</li>
+<li><b>Réveil sur iPhone</b> : pas possible tel quel. Il faudrait réécrire la partie alarme pour iOS (AlarmKit, iOS 26) et avoir un Mac.</li>
+<li><b>Microsoft Store (NEUROFORGE)</b> : compte développeur Microsoft, puis « Appli MSI ou EXE » avec le lien de l'installateur
+  de votre page. À faire après Google Play.</li>
+</ul>
+</main>
+<script>
+function copier(b) {
+  navigator.clipboard.writeText(b.dataset.t).then(() => {
+    const t = b.textContent; b.textContent = 'Copié ✓'; b.classList.add('ok');
+    setTimeout(() => { b.textContent = t; b.classList.remove('ok'); }, 1500);
+  });
+}
+</script></body></html>

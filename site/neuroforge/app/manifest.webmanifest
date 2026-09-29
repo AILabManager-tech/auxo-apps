@@ -1,0 +1,30 @@
+{
+ "name": "NEUROFORGE",
+ "short_name": "NeuroForge",
+ "lang": "fr",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#050404",
+ "theme_color": "#050404",
+ "orientation": "any",
+ "description": "Hub d'entraînement cognitif : 9 modules, bilan, séance quotidienne, répétition espacée.",
+ "icons": [
+  {
+   "src": "icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "icons/maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}
