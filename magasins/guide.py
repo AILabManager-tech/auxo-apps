@@ -9,7 +9,7 @@ import pathlib
 ICI = pathlib.Path(__file__).resolve().parent
 F = json.loads((ICI / "fiches.json").read_text())
 LIVRABLES = {
-    "reveil": pathlib.Path.home() / "02_projects/reveil/livrables/1.0.0",
+    "reveil": pathlib.Path.home() / "02_projects/reveil/livrables/1.0.1",
     "neuroforge": pathlib.Path.home() / "09_GAMING/neuroforge/livrables/natif/1.1.0",
 }
 
@@ -32,6 +32,24 @@ ETAPES = """
 
 def bouton(texte: str) -> str:
     return f'<button onclick="copier(this)" data-t="{html.escape(texte, quote=True)}">Copier</button>'
+
+
+def video(a: dict) -> str:
+    """Formulaire « service de premier plan » + plan de la vidéo de démonstration (Réveil)."""
+    v = a.get("video")
+    if not v:
+        return ""
+    lignes = "".join(
+        f"<tr><th>{html.escape(nom)}</th><td><pre>{html.escape(fr)}</pre>{bouton(fr)}</td>"
+        f"<td>{'<pre>' + html.escape(en) + '</pre>' + bouton(en) if en else ''}</td></tr>"
+        for nom, fr, en in v["champs"]
+    )
+    plan = "".join(f"<li>{html.escape(e)}</li>" for e in v["plan"])
+    return f"""
+<h3>Service de premier plan et vidéo de démonstration</h3>
+<p>{html.escape(v['intro'])}</p>
+<table><tr><th></th><th>Français</th><th>English (si le formulaire est en anglais)</th></tr>{lignes}</table>
+<h4>Plan de la vidéo (60 à 90 secondes)</h4><ol class="etapes">{plan}</ol>"""
 
 
 def section(cle: str) -> str:
@@ -59,7 +77,7 @@ def section(cle: str) -> str:
 <div class="caps"><a href="../site/img/{cle}-512.png" target="_blank"><img src="../site/img/{cle}-512.png"></a>
 <a href="{cle}/banniere-1024x500.png" target="_blank"><img class="ban" src="{cle}/banniere-1024x500.png"></a>{images}</div>
 <h3>Questionnaires (Contenu de l'appli)</h3>
-<table>{rep}</table>
+<table>{rep}</table>{video(a)}
 </section>"""
 
 
@@ -73,6 +91,7 @@ nav {{ display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }}
 nav a {{ background: #a9ddcf; color: #0f1c1a; padding: 10px 18px; border-radius: 10px; text-decoration: none; font-weight: 700; }}
 main {{ max-width: 1200px; margin: 0 auto; padding: 16px; }}
 h2 {{ display: flex; align-items: center; gap: 12px; font-weight: 500; font-size: 1.8rem; margin: 48px 0 8px; border-top: 3px solid #2c5a66; padding-top: 24px; }}
+h4 {{ margin: 18px 0 4px; }}
 h2 .ic {{ width: 48px; height: 48px; border-radius: 12px; }}
 table {{ border-collapse: collapse; width: 100%; background: #fff; }}
 th, td {{ border: 1px solid #dcd8cc; padding: 10px; vertical-align: top; text-align: left; }}
