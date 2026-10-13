@@ -3,6 +3,7 @@
 
     ./publier.py neuroforge 1.1.0 ~/09_GAMING/neuroforge/livrables/natif/1.1.0
     ./publier.py reveil 1.0.0 ~/02_projects/reveil/apps/mobile/build/app/outputs/flutter-apk
+    ./publier.py fiscalio 1.0.0 ~/02_projects/fiscalio/livrables/1.0.0
 
 Ce que ça fait, dans l'ordre :
 1. crée la release GitHub « <appli>-v<version> » dans ce dépôt, avec les installateurs du dossier ;
@@ -25,7 +26,7 @@ DEPOT = "AILabManager-tech/auxo-apps"
 URL_SITE = "https://ailabmanager-tech.github.io/auxo-apps/"
 PWA_NEUROFORGE = pathlib.Path.home() / "09_GAMING/neuroforge/app"
 
-NOMS = {"neuroforge": "NEUROFORGE", "reveil": "Réveil"}
+NOMS = {"neuroforge": "NEUROFORGE", "reveil": "Réveil", "fiscalio": "Fiscalio"}
 
 # Motif du nom de fichier → clé lue par installer.js
 MOTIFS = [

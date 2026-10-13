@@ -33,5 +33,25 @@
       "microsoft": null
     },
     "web": "app/"
+  },
+  "fiscalio": {
+    "nom": "Fiscalio",
+    "version": "1.0.0",
+    "tag": "fiscalio-v1.0.0",
+    "fichiers": {
+      "linux_rpm": "Fiscalio-1.0.0-1.x86_64.rpm",
+      "android": "Fiscalio-1.0.0-android.apk",
+      "linux_appimage": "Fiscalio_1.0.0_amd64.AppImage",
+      "linux_deb": "Fiscalio_1.0.0_amd64.deb",
+      "mac": "Fiscalio_1.0.0_universal.dmg",
+      "windows": "Fiscalio_1.0.0_x64-setup.exe",
+      "windows_msi": "Fiscalio_1.0.0_x64_en-US.msi"
+    },
+    "magasins": {
+      "play": null,
+      "appstore": null,
+      "microsoft": null
+    },
+    "web": null
   }
 }
