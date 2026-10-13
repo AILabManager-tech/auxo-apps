@@ -61,7 +61,43 @@ def collecter(appli: str, version: str, dossier: pathlib.Path, tmp: pathlib.Path
                 break
     if not fichiers:
         sys.exit(f"Aucun installateur reconnu dans {dossier}")
+    # Mise à jour automatique (Tauri) : signatures et archive macOS, publiées avec la release mais absentes du tableau.
+    for f in sorted(dossier.iterdir()):
+        if f.name.endswith(".sig") or f.name.endswith(".app.tar.gz"):
+            shutil.copy2(f, tmp / f.name)
     return fichiers
+
+
+def latest_json(appli: str, version: str, tag: str, fichiers: dict, dossier: pathlib.Path) -> None:
+    """Écrit site/<appli>/latest.json, lu par l'application au démarrage (greffon updater de Tauri)."""
+    def sig(nom: str) -> str | None:
+        f = dossier / f"{nom}.sig"
+        return f.read_text().strip() if f.exists() else None
+
+    def url(nom: str) -> str:
+        return f"https://github.com/{DEPOT}/releases/download/{tag}/{nom}"
+
+    plateformes = {}
+    if "linux_appimage" in fichiers and sig(fichiers["linux_appimage"]):
+        plateformes["linux-x86_64"] = {"signature": sig(fichiers["linux_appimage"]), "url": url(fichiers["linux_appimage"])}
+    if "windows" in fichiers and sig(fichiers["windows"]):
+        plateformes["windows-x86_64"] = {"signature": sig(fichiers["windows"]), "url": url(fichiers["windows"])}
+    mac = next((f.name for f in dossier.iterdir() if f.name.endswith(".app.tar.gz")), None)
+    if mac and sig(mac):
+        for cle in ("darwin-universal", "darwin-aarch64", "darwin-x86_64"):
+            plateformes[cle] = {"signature": sig(mac), "url": url(mac)}
+    if not plateformes:
+        print("latest.json : aucune signature trouvée, mise à jour automatique non publiée")
+        return
+    import datetime
+    (SITE / appli).mkdir(exist_ok=True)
+    (SITE / appli / "latest.json").write_text(json.dumps({
+        "version": version,
+        "notes": f"{NOMS[appli]} {version}",
+        "pub_date": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "platforms": plateformes,
+    }, indent=2) + "\n")
+    print("latest.json :", ", ".join(plateformes))
 
 
 def qr(nom: str, url: str) -> None:
@@ -104,6 +140,8 @@ def main() -> None:
         "web": "app/" if appli == "neuroforge" else None,
     }
     chemin.write_text(json.dumps(versions, indent=2, ensure_ascii=False) + "\n")
+    if appli == "fiscalio":
+        latest_json(appli, version, tag, fichiers, dossier)
 
     if appli == "neuroforge":
         cible = SITE / "neuroforge/app"
