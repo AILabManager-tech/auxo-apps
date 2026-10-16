@@ -1,27 +1,27 @@
 {
-  "version": "1.0.2",
-  "notes": "Fiscalio 1.0.2",
-  "pub_date": "2026-10-16T16:42:53Z",
+  "version": "1.0.3",
+  "notes": "Fiscalio 1.0.3",
+  "pub_date": "2026-10-16T17:12:38Z",
   "platforms": {
     "linux-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTRC9WQlN2RFVkbi9CZk5lSlR5bGg4dk9ESmVqS004TzRra051Mm5PejZSb3QrMmhjbzZLS0R1VDRUdkdGVlNJdnV1ZS94WTNCQzl0TlorTk1YMnF4UXJ6cGdZbnhwNmdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODY1NjE5CWZpbGU6RmlzY2FsaW9fMS4wLjJfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjAuMgptaTlOSVJlT29lT2tSTDJFSjEyM1BNcVJpUmNGVWI2TXl6OVQxcUJRRktZUXlMQjFGODQvM1loTk5PYm9DWGdIOW5HdWNSMEZGZDRFczlmUUxvOHFEdz09Cg==",
-      "url": "https://github.com/AILabManager-tech/auxo-apps/releases/download/fiscalio-v1.0.2/Fiscalio_1.0.2_amd64.AppImage"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTRC9WQlN2RFVkbjg5THAwMkZYSlMrK0duUVFsTWVRclozZUNjUHlEUU1WOS9SRjcrdTRlYkRCNndPbWR6OTJWWnVZdXIwUmplWG8xOTN4MEtHQnBsR0h2OVVnSTNYaWc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTcwMDMyCWZpbGU6RmlzY2FsaW9fMS4wLjNfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjAuMwpmUTZIcmZReUlIdXNuV05VbFBVYjZtZkxCbzU4d1h5Q1k1cXlLTDByUko2WmxXSG4zS3p3NUVOSGNqTzFzREV0dUF5Mk1UQ1NyeXFUNGdtUHZTeFpDZz09Cg==",
+      "url": "https://github.com/AILabManager-tech/auxo-apps/releases/download/fiscalio-v1.0.3/Fiscalio_1.0.3_amd64.AppImage"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTRC9WQlN2RFVkbnlZWWgxdjZITnJoQkhYdy8yakpMS0xCQ3lOeUpnaGpVNEpFVzJTV2dJUWhZU2VrM2swZGRHM0RUYlE0dE5YaWxUcHlZUXVuY1lub1ZmblAxalBjS0EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODY1NzY3CWZpbGU6RmlzY2FsaW9fMS4wLjJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4yCmYzYUk4TDBKM0JzbGRCZU92cUpEa3pHa3dOK1VSZ3B6dHhqQVNBcUE0RmZudEhhR29DK0pzUzgwdFFUS0M2YmhmM3MwZnNIdnRhTERCeGFqeG5xL0RnPT0K",
-      "url": "https://github.com/AILabManager-tech/auxo-apps/releases/download/fiscalio-v1.0.2/Fiscalio_1.0.2_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTRC9WQlN2RFVkbjhOTmdWYnJTbThzN3dua3ZUYzZidVA3dXlmaC9mQitZNzIrOFF2SDNPMk9TeU9IdzlCdnFCbzE3b08xaXVJNmVQTjNoUWpuV1ZTMUVsYkk0a3FRckFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTcwMTc4CWZpbGU6RmlzY2FsaW9fMS4wLjNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4zCjB5eTdwb0hQNnhtWkphaFZCVVZDVUFUQkNxaUlaV2VNNWZxNEt5QU5jK3lJVkVMd253dTA0VzNCQXFiUE53dkJZVlhlOS9mdzdWN0ROQnVrZTdNaURBPT0K",
+      "url": "https://github.com/AILabManager-tech/auxo-apps/releases/download/fiscalio-v1.0.3/Fiscalio_1.0.3_x64-setup.exe"
     },
     "darwin-universal": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTRC9WQlN2RFVkbis3RUkwTVA2aFFoeERlc0EwNDI2QTJiSGdIUUdsUHVMdTlWSlhPSlJlem5rbGtreGhNelRCZzI3TVNOQ0o2MEkyMWE2SUk4M1BFV1k2RXA0MGdDRVFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODY1MTgzCWZpbGU6RmlzY2FsaW8uYXBwLnRhci5negl2ZXJzaW9uOjEuMC4yCjRaUWticEd3Zm5FS2l3bkM1MHF1VERSNVNvYXZLclZxYnNjaGFFWmlBTFZJNUJBWVRWem11R3lyRGdBUFI1OVdyOGhSUUE3UXRYUUNCVjVIZEp0TUJ3PT0K",
-      "url": "https://github.com/AILabManager-tech/auxo-apps/releases/download/fiscalio-v1.0.2/Fiscalio_universal.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTRC9WQlN2RFVkbi9ZaUh3ellNRUZDdHNlU3lheW5rV1NzSWFWVTZnOXRlWDlSeUM3akk2RnNmd2Y3QVNZbDBpT1BDVVJKVEcvNER3UUtMOXdjeUp0dEwvZDQyR3hjcEFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTY5NjAyCWZpbGU6RmlzY2FsaW8uYXBwLnRhci5negl2ZXJzaW9uOjEuMC4zCmZoekdZaTYyYiswSEMyY0RFa2xndzEzbkI0Q1gzdEJMTkpWK0VFRjEraU5hNXZReCs2WHJtZkp3bW9UZ3h1SVFVcVhwWHRMeEF4YkRNVldNTFlUUENRPT0K",
+      "url": "https://github.com/AILabManager-tech/auxo-apps/releases/download/fiscalio-v1.0.3/Fiscalio_universal.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTRC9WQlN2RFVkbis3RUkwTVA2aFFoeERlc0EwNDI2QTJiSGdIUUdsUHVMdTlWSlhPSlJlem5rbGtreGhNelRCZzI3TVNOQ0o2MEkyMWE2SUk4M1BFV1k2RXA0MGdDRVFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODY1MTgzCWZpbGU6RmlzY2FsaW8uYXBwLnRhci5negl2ZXJzaW9uOjEuMC4yCjRaUWticEd3Zm5FS2l3bkM1MHF1VERSNVNvYXZLclZxYnNjaGFFWmlBTFZJNUJBWVRWem11R3lyRGdBUFI1OVdyOGhSUUE3UXRYUUNCVjVIZEp0TUJ3PT0K",
-      "url": "https://github.com/AILabManager-tech/auxo-apps/releases/download/fiscalio-v1.0.2/Fiscalio_universal.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTRC9WQlN2RFVkbi9ZaUh3ellNRUZDdHNlU3lheW5rV1NzSWFWVTZnOXRlWDlSeUM3akk2RnNmd2Y3QVNZbDBpT1BDVVJKVEcvNER3UUtMOXdjeUp0dEwvZDQyR3hjcEFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTY5NjAyCWZpbGU6RmlzY2FsaW8uYXBwLnRhci5negl2ZXJzaW9uOjEuMC4zCmZoekdZaTYyYiswSEMyY0RFa2xndzEzbkI0Q1gzdEJMTkpWK0VFRjEraU5hNXZReCs2WHJtZkp3bW9UZ3h1SVFVcVhwWHRMeEF4YkRNVldNTFlUUENRPT0K",
+      "url": "https://github.com/AILabManager-tech/auxo-apps/releases/download/fiscalio-v1.0.3/Fiscalio_universal.app.tar.gz"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTRC9WQlN2RFVkbis3RUkwTVA2aFFoeERlc0EwNDI2QTJiSGdIUUdsUHVMdTlWSlhPSlJlem5rbGtreGhNelRCZzI3TVNOQ0o2MEkyMWE2SUk4M1BFV1k2RXA0MGdDRVFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxODY1MTgzCWZpbGU6RmlzY2FsaW8uYXBwLnRhci5negl2ZXJzaW9uOjEuMC4yCjRaUWticEd3Zm5FS2l3bkM1MHF1VERSNVNvYXZLclZxYnNjaGFFWmlBTFZJNUJBWVRWem11R3lyRGdBUFI1OVdyOGhSUUE3UXRYUUNCVjVIZEp0TUJ3PT0K",
-      "url": "https://github.com/AILabManager-tech/auxo-apps/releases/download/fiscalio-v1.0.2/Fiscalio_universal.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTRC9WQlN2RFVkbi9ZaUh3ellNRUZDdHNlU3lheW5rV1NzSWFWVTZnOXRlWDlSeUM3akk2RnNmd2Y3QVNZbDBpT1BDVVJKVEcvNER3UUtMOXdjeUp0dEwvZDQyR3hjcEFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTY5NjAyCWZpbGU6RmlzY2FsaW8uYXBwLnRhci5negl2ZXJzaW9uOjEuMC4zCmZoekdZaTYyYiswSEMyY0RFa2xndzEzbkI0Q1gzdEJMTkpWK0VFRjEraU5hNXZReCs2WHJtZkp3bW9UZ3h1SVFVcVhwWHRMeEF4YkRNVldNTFlUUENRPT0K",
+      "url": "https://github.com/AILabManager-tech/auxo-apps/releases/download/fiscalio-v1.0.3/Fiscalio_universal.app.tar.gz"
     }
   }
 }
