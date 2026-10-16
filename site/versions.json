@@ -36,16 +36,16 @@
   },
   "fiscalio": {
     "nom": "Fiscalio",
-    "version": "1.0.5",
-    "tag": "fiscalio-v1.0.5",
+    "version": "1.0.6",
+    "tag": "fiscalio-v1.0.6",
     "fichiers": {
-      "linux_rpm": "Fiscalio-1.0.5-1.x86_64.rpm",
-      "android": "Fiscalio-1.0.5-android.apk",
-      "linux_appimage": "Fiscalio_1.0.5_amd64.AppImage",
-      "linux_deb": "Fiscalio_1.0.5_amd64.deb",
-      "mac": "Fiscalio_1.0.5_universal.dmg",
-      "windows": "Fiscalio_1.0.5_x64-setup.exe",
-      "windows_msi": "Fiscalio_1.0.5_x64_en-US.msi"
+      "linux_rpm": "Fiscalio-1.0.6-1.x86_64.rpm",
+      "android": "Fiscalio-1.0.6-android.apk",
+      "linux_appimage": "Fiscalio_1.0.6_amd64.AppImage",
+      "linux_deb": "Fiscalio_1.0.6_amd64.deb",
+      "mac": "Fiscalio_1.0.6_universal.dmg",
+      "windows": "Fiscalio_1.0.6_x64-setup.exe",
+      "windows_msi": "Fiscalio_1.0.6_x64_en-US.msi"
     },
     "magasins": {
       "play": null,
