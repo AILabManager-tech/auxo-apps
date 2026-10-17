@@ -26,7 +26,7 @@ DEPOT = "AILabManager-tech/auxo-apps"
 URL_SITE = "https://ailabmanager-tech.github.io/auxo-apps/"
 PWA_NEUROFORGE = pathlib.Path.home() / "09_GAMING/neuroforge/app"
 
-NOMS = {"neuroforge": "NEUROFORGE", "reveil": "Réveil", "fiscalio": "Fiscalio"}
+NOMS = {"neuroforge": "NEUROFORGE", "reveil": "Réveil", "fiscalio": "Fiscalio", "crm-libre": "CRM Libre"}
 
 # Motif du nom de fichier → clé lue par installer.js
 MOTIFS = [
@@ -140,7 +140,7 @@ def main() -> None:
         "web": "app/" if appli == "neuroforge" else None,
     }
     chemin.write_text(json.dumps(versions, indent=2, ensure_ascii=False) + "\n")
-    if appli == "fiscalio":
+    if appli in ("fiscalio", "crm-libre"):  # applis Tauri à mise à jour automatique
         latest_json(appli, version, tag, fichiers, dossier)
 
     if appli == "neuroforge":
